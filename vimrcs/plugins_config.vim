@@ -50,3 +50,6 @@ let g:syntastic_python_checkers=['pyflakes']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+" colorscheme
+set background=dark
+colorscheme peaksea
