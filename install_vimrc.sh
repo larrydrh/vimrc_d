@@ -1,4 +1,4 @@
-cd ~/.vim_rc
+cd ~/.vimrc_d
 
 echo 'set runtimepath+=~/.vim_rc
 
