@@ -10,7 +10,14 @@
 call pathogen#infect('~/.vimrc_d/plugin_sources/{}')
 call pathogen#helptags()
 
-
+""""""""""""""""""""""""""""""
+" => bufExplorer plugin
+" """"""""""""""""""""""""""""""
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+let g:bufExplorerFindActive=1
+let g:bufExplorerSortBy='name'
+map <leader>o :BufExplorer<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -30,11 +37,6 @@ let g:multi_cursor_next_key="\<C-s>"
 
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-airline config (force color)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme="molokai" 
-let g:airline_powerline_fonts = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
@@ -89,3 +91,19 @@ if has("cscope")
    nmap <C-/>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
    nmap <C-/>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 endif
+
+
+""""""""""""""""""""""""""""""
+" => CTRL-P
+" """"""""""""""""""""""""""""""
+let g:ctrlp_working_path_mode = 0
+
+let g:ctrlp_map = '<c-f>'
+map <leader>j :CtrlP<cr>
+map <c-b> :CtrlPBuffer<cr>
+
+let g:ctrlp_max_height = 20
+let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+
+
+let g:airline_theme="luna"
