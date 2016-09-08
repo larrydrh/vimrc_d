@@ -4,6 +4,4 @@
 
 git clone https://github.com/tryangel/vimrc_d.git ~/.vimrc_d
 
-chmod 777 ~/.vimrc_d/install_vimrc.sh
-
-~/.vimrc_d/install_vimrc.sh
+sh ~/.vimrc_d/install_vimrc.sh
