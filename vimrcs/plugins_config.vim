@@ -33,8 +33,7 @@ let g:multi_cursor_next_key="\<C-s>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme="luna"
-
+let g:airline_theme="luna" 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -72,7 +71,7 @@ if has("cscope")
   
    " add any cscope database in current directory
    if filereadable("cscope.out")
-       cs add cscope.out
+   " cs add cscope.out
    " else add the database pointed to by environment variable
    elseif $CSCOPE_DB !=""
        cs add $CSCOPE_DB
