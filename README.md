@@ -15,6 +15,3 @@ Neocomplete : https://github.com/Shougo/neocomplete.vim.git
 
 nerdcommenter : ttps://github.com/scrooloose/nerdcommenter.git
 
-vim-airline : https://github.com/vim-airline/vim-airline.git
-
-vim-airline-themes : https://github.com/vim-airline/vim-airline-themes.git
