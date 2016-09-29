@@ -1,12 +1,12 @@
-cd ~/.vimrc_d
+cd /root/.vimrc_d
 
+rm -f /etc/vim/vimrc
 
+echo 'set runtimepath+=/root/.vimrc_d
 
-echo 'set runtimepath+=~/.vimrc_d
+source /root/.vimrc_d/vimrcs/basic.vim
+source /root/.vimrc_d/vimrcs/plugins_config.vim
 
-source ~/.vimrc_d/vimrcs/basic.vim
-source ~/.vimrc_d/vimrcs/plugins_config.vim
-
-' > ~/.vimrc
+' > /root/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
