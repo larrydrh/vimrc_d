@@ -1,14 +1,18 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important: 
-"       This requries that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
 call pathogen#infect('/home/.vimrc_d/plugin_sources/{}')
 call pathogen#helptags()
+
+" colorscheme
+syntax enable
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
+colorscheme solarized 
+"solarizedpeaksea
+
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -51,10 +55,6 @@ let g:syntastic_python_checkers=['pyflakes']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
-" colorscheme
-set background=dark
-colorscheme peaksea
-
 " 按F8按钮，在窗口的左侧出现taglist的窗口,像vc的左侧的workpace
 nnoremap <silent> <F8> :TlistToggle<CR><CR>
 " :Tlist              调用TagList
@@ -106,5 +106,4 @@ if has("cscope")
    nmap <C-c>d :scs find d <C-R>=expand("<cword>")<CR><CR>
 
 endif
-
 
