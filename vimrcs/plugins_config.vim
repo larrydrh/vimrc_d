@@ -107,3 +107,7 @@ if has("cscope")
 
 endif
 
+let g:vimrc_author='renhuan.ding' 
+let g:vimrc_email='renhuan.ding@feixun.com'  
+
+nmap <F4> :AuthorInfoDetect<cr> 

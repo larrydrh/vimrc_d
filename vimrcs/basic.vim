@@ -297,3 +297,4 @@ function! HasPaste()
     endif
     return ''
 endfunction
+
