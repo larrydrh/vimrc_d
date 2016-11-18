@@ -1,3 +1,12 @@
+#=============================================================================
+#     FileName: install_vimrc_all.sh
+#         Desc:  
+#       Author: renhuan.ding
+#        Email: renhuan.ding@feixun.com
+#      Version: 0.0.1
+#   LastChange: 2016-11-18 15:38:02
+#      History:
+#=============================================================================
 cd /home/.vimrc_d
 
 rm -f /etc/vim/vimrc
