@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
 call pathogen#infect('/home/.vimrc_d/plugin_sources/{}')
@@ -8,6 +8,7 @@ call pathogen#helptags()
 syntax enable
 set background=dark
 let g:solarized_termtrans=1
+let g:solarized_colors=256
 let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 colorscheme solarized 
